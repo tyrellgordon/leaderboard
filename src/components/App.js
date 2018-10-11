@@ -5,21 +5,7 @@ import '../stylesheets/App.css'
 
 class App extends Component {
 
-  constructor(props){
-    super(props)
-    this.state = {transactionArray: [],
-                  searchTerm: ''
-    }
-  }
 
-  componentDidMount(){
-
-    fetch('https://boiling-brook-94902.herokuapp.com/transactions')
-    .then(res => res.json())
-    .then(data => {
-      this.setState({transactionArray: data})
-    })
-}
 
 
   render() {
@@ -30,7 +16,7 @@ class App extends Component {
           <h2> Leaderboard</h2>
         </div>
 
-        <PlayerContainer  searchTerm={this.state.searchTerm} handleChange={this.handleChange} transactionArray={this.state.transactionArray}/>
+        <PlayerContainer />
 
       </div>
     )

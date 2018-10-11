@@ -4,8 +4,8 @@ const Player = (props) => {
 
   return (
     <tr>
-      <td></td>
-      <td></td>
+      <td>{props.player.name}</td>
+      <td>{props.player.score}</td>
     </tr>
   )
 }
