@@ -2,6 +2,9 @@ import React from 'react'
 
 const Player = (props) => {
 
+
+
+
   return (
     <tr>
       <td>{props.player.name}</td>

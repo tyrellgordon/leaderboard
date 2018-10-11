@@ -6,17 +6,17 @@ const PlayersList = (props) => {
   let player = () => {
     return props.playerArray.map((player) => {
 
-      return player
+    return  <Player key={player.id} player={player}/>
 
     })
   }
 
 
 
+
   return (
     <table className="ui celled striped padded table">
       <tbody>
-        <Player player={player()}/>
         <tr>
           <th>
             <h3 className="ui center aligned header">
@@ -31,6 +31,7 @@ const PlayersList = (props) => {
 
         </tr>
 
+        {player()}
 
       </tbody>
     </table>
