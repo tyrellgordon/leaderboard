@@ -36,10 +36,10 @@ class PlayerContainer extends Component {
 
 
     return (
-      <div>
+      <span>
         <Search />
         <PlayersList playerArray={this.filteredPlayers()}/>
-      </div>
+      </span>
     )
   }
 }

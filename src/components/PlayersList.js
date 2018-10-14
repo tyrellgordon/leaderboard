@@ -15,16 +15,18 @@ const PlayersList = (props) => {
 
 
   return (
-    <table className="ui celled striped padded table">
+
+
+    <table className="ui selectable inverted table">
       <tbody>
         <tr>
           <th>
-            <h3 className="ui center aligned header">
+            <h3 >
               Name
             </h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">
+            <h3 >
               Score
             </h3>
           </th>
