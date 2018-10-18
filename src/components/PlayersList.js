@@ -21,12 +21,12 @@ const PlayersList = (props) => {
       <tbody>
         <tr>
           <th>
-            <h3 >
+            <h3 id="attribute" >
               Name
             </h3>
           </th>
           <th>
-            <h3 >
+            <h3 id="attribute">
               Score
             </h3>
           </th>

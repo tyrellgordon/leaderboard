@@ -11,9 +11,14 @@ class App extends Component {
   render() {
 
     return (
-      <div className="ui raised  segment">
+
+
+      <div >
+      <div> <div id="center">
+  <h1 id="logo">XQuest</h1>
+</div></div>
         <div className="ui segment black inverted">
-          <h2> Leaderboard</h2>
+          <h2 id="attribute"> Leaderboard</h2>
         </div>
 
         <PlayerContainer />

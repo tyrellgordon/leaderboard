@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PlayersList from './PlayersList'
-import Search from './Search'
 
 
 class PlayerContainer extends Component {
@@ -37,7 +36,7 @@ class PlayerContainer extends Component {
 
     return (
       <span>
-        <Search />
+
         <PlayersList playerArray={this.filteredPlayers()}/>
       </span>
     )
