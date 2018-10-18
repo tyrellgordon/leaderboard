@@ -13,11 +13,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | XQuest</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/XQuestWeb.json", {onProgress: UnityProgress});
+    </script>
     <title>React App</title>
   </head>
   <body style="background-color: black  ">
+
+
+
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -28,5 +41,12 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+      <div id="content">
+      <div id="gameContainer" style="width: 600px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+
+      </div>
   </body>
 </html>

@@ -7,7 +7,8 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P&subset=greek,latin);
 #logo{
   font-family: 'Press Start 2P', cursive;
-  font-size: 45px;
+  font-size: 30px;
+  left: -100px;
 }
 #attribute{
   font-family: 'Press Start 2P', cursive;

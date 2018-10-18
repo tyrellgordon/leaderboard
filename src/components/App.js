@@ -13,11 +13,12 @@ class App extends Component {
     return (
 
 
-      <div >
-      <div> <div id="center">
+<div  id="sidebar">
+<div> <div id="center">
   <h1 id="logo">XQuest</h1>
-</div></div>
-        <div className="ui segment black inverted">
+</div>
+    </div>
+        <div  id="sidebar" className="ui segment black inverted">
           <h2 id="attribute"> Leaderboard</h2>
         </div>
 

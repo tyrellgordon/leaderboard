@@ -13,3 +13,18 @@
   padding: 20px;
   color: white;
 }
+
+#content {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right: 300px;
+
+}
+
+#sidebar {
+  width: 520px;
+  height:auto;
+  float:left;
+  overflow: scroll;
+}
