@@ -29,7 +29,7 @@
 
 
 
-    <div id="root"></div>
+
 
     <!--
       This HTML file is a template.
@@ -41,11 +41,35 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
-      <div id="content">
-      <div id="gameContainer" style="width: 600px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+
+
+    <div class="ui black segment">
+  <div class="ui two column very relaxed grid">
+    <div class="black column">
+  <div id="root"></div>
+    </div>
+    <div class="black column">
+      <section class="section_8bit">
+        <div class="wrapper">
+    <div   id="gameContainer" style="width: 600px; height: 600px;" ></div>
+  </div>
+    </section>
+
+
+  <section class="section_8bit">
+    <div class="wrapper">
+      <p id="value">Controls: </p>
+      <p id="value">Movement: WASD</P>
+  </div>
+  </section>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
       </div>
   </body>

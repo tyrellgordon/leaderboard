@@ -15,10 +15,10 @@ class App extends Component {
 
 <div  id="sidebar">
 <div> <div id="center">
-  <h1 id="logo">XQuest</h1>
+
 </div>
     </div>
-        <div  id="sidebar" className="ui segment black inverted">
+        <div  class ="wrapper" id="sidebar" className="ui segment black inverted">
           <h2 id="attribute"> Leaderboard</h2>
         </div>
 

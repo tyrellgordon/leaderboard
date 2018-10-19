@@ -5,16 +5,20 @@ body {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P&subset=greek,latin);
+
+/* this CSS controls the blinking logo font*/
 #logo{
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
   left: -100px;
 }
+/* this CSS controls the the leaderboard name and score */
 #attribute{
   font-family: 'Press Start 2P', cursive;
   font-size: 45px;
   color: yellow;
 }
+/* this CSS controls the value of the name and score */
 #value{
   font-family: 'Press Start 2P', cursive;
   font-size: 15px;
@@ -41,3 +45,39 @@ h1{
 
   cursor: pointer;
 }
+
+.section_8bit{
+width: 100%;
+float: left;
+border-left: 10px solid #FF6600;
+border-right: 10px solid #FF6600;
+position: relative;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.section_8bit .wrapper{
+display: block;
+color: #FF6600;
+padding: 40px;
+margin: -10px 0;
+border-top: 10px solid #FF6600;
+border-bottom: 10px solid #FF6600;
+}
+
+.section_8bit::before,
+.section_8bit::after,
+.section_8bit .wrapper::before,
+.section_8bit .wrapper::after{
+content: '';
+width: 10px;
+height: 10px;
+display: block;
+position: absolute;
+background: #FF6600;
+}
+.section_8bit::before{ top: -5px; left: -5px; }
+.section_8bit::after{ top: -5px; right: -5px; }
+.section_8bit .wrapper::before{ bottom: -5px; left: -5px; }
+.section_8bit .wrapper::after{ bottom: -5px; right: -5px; }

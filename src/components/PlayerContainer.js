@@ -25,7 +25,13 @@ class PlayerContainer extends Component {
 
   filteredPlayers = () => {
 
-    return this.state.playerArray
+    return this.state.playerArray.sort(function (a, b) {
+
+  return b.score - a.score;
+
+});
+
+
 
   }
 
@@ -33,7 +39,7 @@ class PlayerContainer extends Component {
 
   render() {
 
-
+    console.log(this.state)
     return (
       <span>
 
