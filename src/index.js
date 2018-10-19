@@ -28,4 +28,4 @@ ReactDOM.render(
 //   logo.color = cores[j];
 //
 //   setTimeout(trocaCor, 300);
-}
+// }
