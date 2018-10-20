@@ -14,11 +14,14 @@ class PlayerContainer extends Component {
 
   componentDidMount(){
 
-    fetch('http://localhost:3001/users')
-    .then(res => res.json())
-    .then(data => {
-      this.setState({playerArray: data})
-    })
+    this.interval = setInterval(() => {
+      fetch('http://localhost:3001/users')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({playerArray: data})
+      })
+
+    }, 5000)
 
   }
 
