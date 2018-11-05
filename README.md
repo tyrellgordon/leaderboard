@@ -23,8 +23,8 @@ https://github.com/tyrellgordon/leaderboard-api
 
 (make sure you have the back end server running)
 
-npm install
-npm start 
+1. npm install
+2. npm start 
 
 
 
