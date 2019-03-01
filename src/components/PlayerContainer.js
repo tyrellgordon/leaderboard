@@ -15,7 +15,7 @@ class PlayerContainer extends Component {
   componentDidMount(){
 
     this.interval = setInterval(() => {
-      fetch('http://localhost:3001/users')
+      fetch('https://xquestleaderboardapi.herokuapp.com/users')
       .then(res => res.json())
       .then(data => {
         this.setState({playerArray: data})
